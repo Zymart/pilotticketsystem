@@ -106,7 +106,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
                 id: user.id,
                 allow: [
                     PermissionsBitField.Flags.ViewChannel, 
-                    PermissionsIntentBits.Flags.SendMessages,
+                    PermissionsBitField.Flags.SendMessages,        // ✅ Fixed!
                     PermissionsBitField.Flags.ReadMessageHistory
                 ]
             },
